@@ -10,11 +10,6 @@ dim(consumption_Data)
 # subsetting two first days of February 2007:
 cons_Data <- cons_Data[cons_Data$Date == "1/2/2007" | cons_Data$Date == "2/2/2007", ]
 
-
-
-
-
-
 # Create Plot1.png of given resolution, plotting power cosumption histogramm, disconnecting the device:
 
 png(file = "./ExData_Plotting1/Plot1.png", width=480, height=480, bg = "transparent")
