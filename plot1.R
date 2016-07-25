@@ -13,7 +13,7 @@ cons_Data <- cons_Data[cons_Data$Date == "1/2/2007" | cons_Data$Date == "2/2/200
 # Create Plot1.png of given resolution, plotting power cosumption histogramm, disconnecting the device:
 
 png(file = "./ExData_Plotting1/Plot1.png", width=480, height=480, bg = "transparent")
-plot(perf,avg="vertical",spread.estimate="stddev",col="black",lty=3, lwd=3)
+hist(cons_Data$Global_active_power, xlab = "Global Active Power (kilowatts)", col = "red", main = "Global Active Power")
 dev.off()
 
 # End of Plot 1
